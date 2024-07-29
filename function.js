@@ -98,19 +98,41 @@
 // }
 // repeated([10,20,10,30,10])
 
-function repeated(a) {
-    let repeat = 0;
-    for (i of a) {
-        if (i == 10) {
-            repeat++;
-        }
-    }
+// function repeated(a) {
+//     let repeat = 0;
+//     for (i of a) {
+//         if (i == 10) {
+//             repeat++;
+//         }
+//     }
 
-    if (repeat > 0) {
-        console.log(`yes it exists and repeats ${repeat} times`);
+//     if (repeat > 0) {
+//         console.log(`yes it exists and repeats ${repeat} times`);
+//     } else {
+//         console.log("no it does not exist");
+//     }
+// }
+
+// repeated([10, 20, 10, 30, 10]);
+
+                        // ARMSTRONG NUMBER
+// An Armstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits in the number.
+
+function isArmstrongNumber(a){
+    let sum = 0
+    let originalNumber = a
+    while(a>0){
+        let lastDigit = a%10
+        sum = sum+(lastDigit*lastDigit*lastDigit)
+        a = parseInt(a/10)
+    }
+    if (sum === originalNumber) {
+        console.log("is an Armstrong number");
     } else {
-        console.log("no it does not exist");
+        console.log("is not an Armstrong number");
     }
+    
 }
+isArmstrongNumber(370)
 
-repeated([10, 20, 10, 30, 10]);
+
