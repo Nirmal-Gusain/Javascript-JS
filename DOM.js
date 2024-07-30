@@ -1,3 +1,4 @@
+                    //font size changer
 let hello = document.querySelector("h1")
 
 let small = document.querySelector(".small")
@@ -17,7 +18,7 @@ const largeFun = function(){
     hello.style.color="green"
 }
 
-
+                    //random color generator
 
 let box = document.querySelector(".box")
 let rdm = document.querySelector(".rdm")
@@ -51,3 +52,32 @@ let gamefunction = function(){
 }
 let btn = document.querySelector(".btn")
 btn.addEventListener("click",gamefunction)
+
+
+
+                        //Counter 
+
+let number = document.querySelector(".numbers")
+let num = 0
+
+let add = function(){
+    num= num+1
+    number.innerHTML = num
+
+}
+let sub = function(){
+    num= num-1
+    number.innerHTML = num
+}
+let restart = function(){
+    num = num-num
+    number.innerHTML = num
+
+}
+
+let plus = document.querySelector(".plus")
+plus.addEventListener("click", add)
+let minus = document.querySelector(".minus")
+minus.addEventListener("click", sub)
+let reset = document.querySelector(".reset")
+reset.addEventListener("click", restart)
