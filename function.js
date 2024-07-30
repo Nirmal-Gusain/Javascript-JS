@@ -117,16 +117,15 @@
 
                         // ARMSTRONG NUMBER
 // An Armstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits in the number.
-
 function isArmstrongNumber(a){
-    let sum = 0
-    let originalNumber = a
+    let sum = 0 
+    let num = a
     while(a>0){
         let lastDigit = a%10
         sum = sum+(lastDigit*lastDigit*lastDigit)
         a = parseInt(a/10)
     }
-    if (sum === originalNumber) {
+    if (sum === num) {
         console.log("is an Armstrong number");
     } else {
         console.log("is not an Armstrong number");
