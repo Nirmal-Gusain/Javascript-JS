@@ -135,3 +135,9 @@ function isArmstrongNumber(a){
 isArmstrongNumber(370)
 
 
+
+
+// var counter = 0
+// let intervalId = setInterval(function(){
+//     console.log(counter++)
+// },10000)  

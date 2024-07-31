@@ -81,3 +81,16 @@ let minus = document.querySelector(".minus")
 minus.addEventListener("click", sub)
 let reset = document.querySelector(".reset")
 reset.addEventListener("click", restart)
+
+
+let changetoCircle = function(){
+    box.style.borderRadius = "50%"
+}
+let changetosquare = function(){
+    box.style.borderRadius = "0px"
+}
+
+let circleButton = document.querySelector(".circle-button")
+let squareButton = document.querySelector(".square-button")
+circleButton.addEventListener("click",changetoCircle)
+squareButton.addEventListener("click",changetosquare)

@@ -100,43 +100,58 @@
 
                         // PRINT FIRST NAME OF THE FOLLOWING DATA
 
-const person=[{
-    "id": 1,
-    "first_name": "Nickie",
-    "last_name": "Southorn",
-    "email": "nsouthorn0@t.co",
-    "gender": "Male",
-    "phone": "+86 988 458 8839"
-  }, {
-    "id": 2,
-    "first_name": "Priya",
-    "last_name": "Guyet",
-    "email": "pguyet1@psu.edu",
-    "gender": "Male",
-    "phone": "+225 201 122 8186"
-  }, {
-    "id": 3,
-    "first_name": "Neda",
-    "last_name": "Chapell",
-    "email": "nchapell2@chicagotribune.com",
-    "gender": "Female",
-    "phone": "+55 296 146 2266"
-  }, {
-    "id": 4,
-    "first_name": "Dewie",
-    "last_name": "Argontt",
-    "email": "dargontt3@umich.edu",
-    "gender": "Male",
-    "phone": "+62 933 617 6542" 
-  }, {
-    "id": 5,
-    "first_name": "Cloe",
-    "last_name": "Oakshott",
-    "email": "coakshott4@about.me",
-    "gender": "Female",
-    "phone": "+1 864 342 0870"
-  }]
+// const person=[{
+//     "id": 1,
+//     "first_name": "Nickie",
+//     "last_name": "Southorn",
+//     "email": "nsouthorn0@t.co",
+//     "gender": "Male",
+//     "phone": "+86 988 458 8839"
+//   }, {
+//     "id": 2,
+//     "first_name": "Priya",
+//     "last_name": "Guyet",
+//     "email": "pguyet1@psu.edu",
+//     "gender": "Male",
+//     "phone": "+225 201 122 8186"
+//   }, {
+//     "id": 3,
+//     "first_name": "Neda",
+//     "last_name": "Chapell",
+//     "email": "nchapell2@chicagotribune.com",
+//     "gender": "Female",
+//     "phone": "+55 296 146 2266"
+//   }, {
+//     "id": 4,
+//     "first_name": "Dewie",
+//     "last_name": "Argontt",
+//     "email": "dargontt3@umich.edu",
+//     "gender": "Male",
+//     "phone": "+62 933 617 6542" 
+//   }, {
+//     "id": 5,
+//     "first_name": "Cloe",
+//     "last_name": "Oakshott",
+//     "email": "coakshott4@about.me",
+//     "gender": "Female",
+//     "phone": "+1 864 342 0870"
+//   }]
 
-person.map((a)=>{
-    console.log(a.first_name)
+// person.map((a)=>{
+//     console.log(a.first_name)
+// })
+
+
+                      //filter
+
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let even = arr.filter((a) => a % 2 == 0)
+// console.log(even)
+
+                    //Reduce
+
+let arr = [1,2,3,4,5,6]
+let sum = arr.reduce((a,b) =>{
+  return a+b
 })
+console.log(sum) 
