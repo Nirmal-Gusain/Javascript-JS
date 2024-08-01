@@ -79,3 +79,38 @@
 // for(i of str){
 //     console.log(i)
 // }
+
+// 11. Write a function that takes an integer and returns "odd" if the number is odd and "even" if the number is even.
+
+// function isOddorEven(a){
+//     if(a%2 == 0){
+//         console.log("even")
+//     }else{
+//         console.log("odd")
+//     }
+// }
+// isOddorEven(11)
+
+// 12. SUM OF ARRAY
+
+// function sumArray(arr){
+//     let sum = 0
+//     for(i=0;i<arr.length;i++){
+//         sum = sum+arr[i]
+//     }
+//     return sum
+// }
+// console.log(sumArray([1,2,3]))
+
+// 13. FIND MINIMUM VALUE
+
+function findmin(arr){
+    let min = arr[0]
+    for(i = 0; i<arr.length; i++){
+        if(min>arr[i]){
+            min = arr[i]
+        }
+    }
+    return min
+}
+console.log(findmin([13,12,4]))
