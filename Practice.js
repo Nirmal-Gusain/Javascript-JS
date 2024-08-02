@@ -104,13 +104,33 @@
 
 // 13. FIND MINIMUM VALUE
 
-function findmin(arr){
-    let min = arr[0]
-    for(i = 0; i<arr.length; i++){
-        if(min>arr[i]){
-            min = arr[i]
-        }
+// function findmin(arr){
+//     let min = arr[0]
+//     for(i = 0; i<arr.length; i++){
+//         if(min>arr[i]){
+//             min = arr[i]
+//         }
+//     }
+//     return min
+// }
+// console.log(findmin([13,12,4]))
+
+// 14. Check Prime Number
+
+function isPrime(number) {
+    // Handle edge cases
+    if (number <= 1) return false;
+    if (number === 2) return true; // 2 is the only even prime number
+    if (number % 2 === 0) return false; // Eliminate even numbers
+
+    // Check for factors from 3 up to the square root of the number
+    for (let i = 3; i <= Math.sqrt(number); i += 2) {
+        if (number % i === 0) return false;
     }
-    return min
+
+    return true;
 }
-console.log(findmin([13,12,4]))
+
+// Example usage:
+const testNumber = 7;
+console.log(`${testNumber} is ${isPrime(testNumber) ? 'a prime' : 'not a prime'} number.`);
