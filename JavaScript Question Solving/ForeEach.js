@@ -78,15 +78,38 @@
 
 // 8 .Question: Use the forEach method to create an object that summarizes the counts of each unique value in an array.
 // Answer   
-const colors = ['red', 'blue', 'red', 'green', 'blue', 'blue'];
+// const colors = ['red', 'blue', 'red', 'green', 'blue', 'blue'];
 
-const counts = {};
+// const counts = {};
 
-colors.forEach(function(value) {
-    if (counts[value]) {
-        counts[value]++;
-    } else {
-        counts[value] = 1;
-    }
-});
-console.log(counts);
+
+// colors.forEach(function(value) {
+//     if (counts[value]) {
+//         counts[value]++;
+//     } else {
+//         counts[value] = 1;
+//     }
+// });
+// console.log(counts);
+
+// 9. Write a JavaScript function to calculate the sum of two numbers
+// Answer
+
+// function sumOfTwoNumbers(a,b){
+// console.log(a+b)
+// }
+// sumOfTwoNumbers(1,5)
+
+// 10. Write a JavaScript program to find the maximum number in an array. 
+
+// let a = [2,3,1,4,5,6,2,4]
+// let LargestNum = 0
+
+// a.forEach(function(val){
+//     if(val > LargestNum){
+//         LargestNum = val 
+//     }
+// })
+// console.log(LargestNum)
+
+// 11 . 
